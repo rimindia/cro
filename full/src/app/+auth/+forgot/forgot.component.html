@@ -1,0 +1,82 @@
+<header id="header" class="animated fadeInDown">
+
+ <!--<div id="logo-group">
+    <span id="logo"> <img src="assets/img/demo/titan_logo.png" alt="SmartAdmin"> </span>
+  </div>-->
+
+  <!--<span id="extr-page-header-space"> <span class="hidden-mobile hiddex-xs">Need an account?</span> <a routerLink="/auth/register" class="btn btn-danger">Create account</a> </span>-->
+
+</header>
+<div id="main" role="main" class="animated fadeInDown">
+
+  <div id="content" class="container">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+        <!--<h1 class="txt-color-red login-header-big">Titan</h1>-->
+        <div class="hero">
+
+          <div class="pull-left login-desc-box-l">
+            <h4 class="paragraph-header">
+              Creating elevating experiences for the people, we touch and significantly impact the world.<br>
+              We work in Creation through a pioneering spirit and a caring value-driven culture that
+              Steers innovation, drives performance and ensures the highest global standards in everything we do.<br>
+
+
+
+            </h4>
+          </div>
+
+          <!--<img src="assets/img/demo/Titan_Company_Logo.png" class="pull-right display-image" alt="" style="width:210px;padding-top: 9%;">-->
+
+        </div>
+
+
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+        <div class="well no-padding">
+          <form id="login-form" class="smart-form client-form">
+            <header>
+              Forgot Password
+            </header>
+
+            <fieldset>
+
+              <section>
+                <label class="label">Enter your email address</label>
+                <label class="input"> <i class="icon-append fa fa-envelope"></i>
+                  <input type="email" name="email">
+                  <b class="tooltip tooltip-top-right"><i class="fa fa-envelope txt-color-teal"></i> Please enter email address for password reset</b></label>
+              </section>
+              <section>
+										<span class="timeline-seperator text-center text-primary"> <span class="font-sm">OR</span>
+              </span></section>
+              <section>
+                <label class="label">Your Username</label>
+                <label class="input"> <i class="icon-append fa fa-user"></i>
+                  <input type="text" name="username">
+                  <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Enter your username</b> </label>
+                <div class="note">
+                  <a routerLink="/auth/login">I remembered my password!</a>
+                </div>
+              </section>
+
+            </fieldset>
+            <footer>
+              <button (click)="submit($event)" class="btn btn-primary">
+                <i class="fa fa-refresh"></i> Reset Password
+              </button>
+            </footer>
+          </form>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+

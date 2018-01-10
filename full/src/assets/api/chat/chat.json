@@ -1,0 +1,53 @@
+{
+    "users": [
+        {
+            "username": "Sadi Orlaf",
+            "picture": "assets/img/avatars/5.png",
+            "status": "busy",
+            "role": "Marketing Executive"
+        },
+        {
+            "username": "Jessica Dolof",
+            "picture": "assets/img/avatars/1.png",
+            "status": "online",
+            "role": "Sales Administrator"
+        },
+        {
+            "username": "Zekarburg Almandalie",
+            "picture": "assets/img/avatars/3.png",
+            "status": "online",
+            "role": "Sales Admin"
+        },
+        {
+            "username": "Barley Krazurkth",
+            "picture": "assets/img/avatars/4.png",
+            "status": "away",
+            "role": "Sales Director"
+        },
+        {
+            "username": "Farhana Amrin",
+            "picture": "assets/img/avatars/female.png",
+            "status": "incognito",
+            "role": "<p><span>Support Admin</span> <small><i class=\"fa fa-music\"></i> Playing Beethoven Classics</small></p>"
+        },
+        {
+            "username": "Lezley Jacob",
+            "picture": "assets/img/avatars/male.png",
+            "status": "incognito",
+            "role": "Sales Director"
+        }
+    ],
+    "messages": [
+        {
+            "user": {
+                "username": "Manager",
+                "picture": "assets/img/avatars/5.png",
+                "status": "Online"
+            },
+            "date": "2014-10-01T21:08:06.388Z",
+            "body": "Makara Sankranthi is \n                            comming\n                            all the watches will be sold for 50% Discount\n                            <span class=\"col-sm-6 pull-right\"></span>"
+        }
+
+    ]
+
+}
