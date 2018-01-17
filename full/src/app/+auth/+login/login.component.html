@@ -64,14 +64,14 @@
               <section>
                 <label class="label">E-mail</label>
                 <label class="input input state-error"> <i class="icon-append fa fa-user"></i>
-                  <input [(ngModel)]="username" type="email" name="email" data-smart-validate-input="" data-required="" data-email="email" data-message-required="Please enter your email address" data-message-email="Please enter a VALID email address">
+                  <input [(ngModel)]="login.UserName" type="email" name="email" data-smart-validate-input="" data-required="" data-email="email" data-message-required="Please enter your email address" data-message-email="Please enter a VALID email address">
                   <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i>
                     Please enter email address/username</b></label>
               </section>
               <section>
                 <label class="label">Password</label>
                 <label class="input input state-error"> <i class="icon-append fa fa-lock"></i>
-                  <input [(ngModel)]="password" type="password" name="password" data-smart-validate-input="" data-required="" data-minlength="3" data-maxnlength="20" data-message="Please enter your email password">
+                  <input [(ngModel)]="login.Password" type="password" name="password" data-smart-validate-input="" data-required="" data-minlength="3" data-maxnlength="20" data-message="Please enter your email password">
                   <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter
                     your password</b> </label>
 
@@ -86,7 +86,7 @@
               </section>-->
             </fieldset>
             <footer>
-              <button (click)="login($event)" class="btn btn-primary">
+              <button (click)="login(login)" class="btn btn-primary">
                 Sign in
               </button>
             </footer>

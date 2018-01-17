@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, XHRBackend, RequestOptions } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from '../app/services/token-interceptor'
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -19,6 +22,8 @@ import {AccessPolicyService} from './+smartadmin-intel/access-policy.service';
 import {CoreModule} from "./core/core.module";
 import {SmartadminLayoutModule} from "./shared/layout/layout.module";
 import { NgxDatatableCaseComponent } from './ngx-datatable-case/ngx-datatable-case.component';
+
+import { SessionStorageService } from '../app/services/session-storage.service'
 
 
 // Application wide providers
@@ -49,26 +54,25 @@ type StoreType = {
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-
+    HttpClientModule,
     CoreModule,
     SmartadminLayoutModule,
-
-
-
     routing
   ],
   exports: [
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     // ENV_PROVIDERS,
-    APP_PROVIDERS,
-      AccessPolicyService
-
+      APP_PROVIDERS,
+      AccessPolicyService,
+      SessionStorageService,
+      {
+        provide: HTTP_INTERCEPTORS,
+        useClass: TokenInterceptor,
+        multi: true
+      }
   ]
 })
 export class AppModule {
   constructor(public appRef: ApplicationRef, public appState: AppState) {}
-
-
 }
-

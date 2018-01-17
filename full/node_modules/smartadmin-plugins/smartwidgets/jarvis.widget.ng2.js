@@ -274,7 +274,7 @@
 			var mainArr = self.obj.find(self.o.grid + '.sortable-grid')
 				.map(function () {
 					var subArr = $(this)
-						.children(self.o.widgets)
+						.find(self.o.widgets)
 						.map(function () {
 							return {
 								'id': $(this).attr('id')
